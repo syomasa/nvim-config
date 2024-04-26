@@ -1,0 +1,13 @@
+
+*.*
+plugin
+share
+bin
+
+!.gitignore
+!init.lua
+!init.vim
+!ginit.vim
+!lua/*.lua
+
+
