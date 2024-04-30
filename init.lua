@@ -17,6 +17,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.autochdir = false
 vim.cmd.colorscheme("github_dark_default")
+vim.cmd.language("en_US")
 
 -- Remaps --
 vim.g.mapleader = " "
@@ -81,4 +82,10 @@ vim.g.rooter_patterns = {'.git', 'Makefile', 'build/env.sh', 'init.lua'}
 --)
 --
 --vim.
+
+function os.capture(cmd)
+    local f = assert(io.popen(cmd, "r"))
+    return assert(f:read('*a'))
+end
+
 
