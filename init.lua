@@ -16,7 +16,10 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.autochdir = false
-vim.cmd.colorscheme("github_dark_default")
+vim.opt.termguicolors = true
+vim.opt.cursorline = true
+vim.opt.splitright = true
+vim.cmd.colorscheme("onedark")
 vim.cmd.language("en_US")
 
 -- Remaps --

@@ -1,11 +1,15 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    use 'syomasa/centerpad.nvim'
     use 'wbthomason/packer.nvim'
-    use 'projekt0n/github-nvim-theme'
+
+    -- colorschemes -- 
+    use 'navarasu/onedark.nvim'
+
+    -- utility --
     use 'sheerun/vim-polyglot' -- use this if language server not in use or available
     use "airblade/vim-rooter"
+    use 'syomasa/centerpad.nvim'
 
     -- nvim cmp packages --
     use "hrsh7th/nvim-cmp"
